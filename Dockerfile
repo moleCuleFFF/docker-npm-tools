@@ -30,4 +30,4 @@ RUN /usr/bin/npm install --global bower gulp-cli grunt-cli webpack browserify mo
 WORKDIR /app
 
 # Default action is to NPM install and then run the default gulp task
-CMD /usr/bin/npm -q install || true && gulp || true
+CMD /usr/bin/npm -q install && gulp
