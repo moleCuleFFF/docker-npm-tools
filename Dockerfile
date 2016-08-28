@@ -13,6 +13,7 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     apt-get clean && \
     apt-get autoremove && \
+    dpkg -l | grep '^rc' | awk '{print $2}' | xargs dpkg --purge && \
     rm -r /var/lib/apt/lists/*
 
 # Install NPM globally, along with some friendly tools
