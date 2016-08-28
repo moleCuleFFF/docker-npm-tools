@@ -13,12 +13,13 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     apt-get clean && \
     apt-get autoremove && \
-    dpkg -l | grep '^rc' | awk '{print $2}' | xargs dpkg --purge && \
     rm -r /var/lib/apt/lists/*
 
-# Install NPM globally, along with some friendly tools
-RUN /usr/bin/npm install --global npm && \
-    /usr/bin/npm install --global bower gulp-cli grunt-cli webpack browserify mocha
+# Install NPM globally
+RUN /usr/bin/npm install --global npm
+
+# Now install some tools, globally of course
+RUN /usr/bin/npm install --global bower gulp-cli grunt-cli webpack browserify mocha
 
 # Set up the working directory
 WORKDIR /app
