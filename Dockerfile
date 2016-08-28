@@ -24,4 +24,4 @@ RUN /usr/bin/npm install --global npm && \
 WORKDIR /app
 
 # Default action is to NPM install and then run the default gulp task
-CMD /usr/bin/npm -q install && gulp
+CMD /usr/bin/npm -q install || true && gulp || true
