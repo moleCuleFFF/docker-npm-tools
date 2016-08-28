@@ -32,7 +32,7 @@ This will run "bower" with the "install" argument.
 Any of the other tools can be called with their respective usages.
 
 ## Helper Scripts
-###Powershell
+### Powershell
 Coming Soon!
 
 ### Bash
