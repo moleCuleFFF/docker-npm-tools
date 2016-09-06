@@ -1,5 +1,4 @@
-[![](https://images.microbadger.com/badges/image/schodemeiss/npm-tools.svg)](http://microbadger.com/images/schodemeiss/npm-tools "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/schodemeiss/npm-tools.svg)](http://microbadger.com/images/schodemeiss/npm-tools "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/schodemeiss/npm-tools.svg)](http://microbadger.com/images/schodemeiss/npm-tools "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/schodemeiss/npm-tools.svg)](http://microbadger.com/images/schodemeiss/npm-tools "Get your own version badge on microbadger.com")
 
 # Single Container NPM Tools
 A collection of NPM tools to aid in the development and QA of Javascript/Web applications.
