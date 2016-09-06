@@ -36,7 +36,9 @@ Any of the other tools can be called with their respective usages.
 
 ## Helper Scripts
 ### Powershell
-Coming Soon!
+A Powershell function alias script can be found here: https://github.com/schodemeiss/docker-npm-tools/blob/master/npm-tools-aliases.ps1
+
+This will allow you to run "npm" without having to run any docker specific commands.
 
 ### Bash
 Coming Soon!
