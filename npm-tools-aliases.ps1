@@ -12,6 +12,10 @@ function run-npm-tools {
 }
 
 # Create some functions to call our tools
+function npm {
+    run-npm-tools npm @args
+}
+
 function bower {
     run-npm-tools bower @args
 }
