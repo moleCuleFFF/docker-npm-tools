@@ -1,9 +1,6 @@
 FROM debian:jessie
 MAINTAINER Andrew Barlow <andrew.barlow@gmail.com>
 
-# Lets try and be as non-interactive as possible
-ENV DEBIAN_FRONTEND noninteractive
-
 # Grab the requirements of Node
 RUN apt-get update \
     && apt-get install -y \
