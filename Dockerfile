@@ -26,6 +26,10 @@ RUN /usr/bin/npm install --global npm
 # Now install some tools, globally of course
 RUN /usr/bin/npm install --global bower gulp-cli grunt-cli webpack browserify mocha foundation-cli
 
+# Add a new user to optionally run commands not as root
+RUN groupadd -r app -g 1000 && useradd -u 1000 -r -g app -m -d /app -s /sbin/nologin -c "App user" app && \
+    chmod 755 /app
+
 # Set up the working directory
 WORKDIR /app
 
