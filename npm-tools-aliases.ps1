@@ -43,3 +43,8 @@ function mocha {
 function phpmd {
     run-npm-tools phpmd @args
 }
+
+function foundation {
+    run-npm-tools foundation @args
+}
+
