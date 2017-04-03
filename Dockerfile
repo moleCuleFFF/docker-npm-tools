@@ -24,7 +24,7 @@ RUN cd $(npm root -g)/npm \
 RUN /usr/bin/npm install --global npm
 
 # Now install some tools, globally of course
-RUN /usr/bin/npm install --global bower gulp-cli grunt-cli webpack browserify mocha
+RUN /usr/bin/npm install --global bower gulp-cli grunt-cli webpack browserify mocha foundation-cli
 
 # Set up the working directory
 WORKDIR /app
